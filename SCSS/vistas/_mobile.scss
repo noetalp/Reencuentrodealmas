@@ -1,0 +1,229 @@
+/*Mobile */
+@media only screen and (max-width:480px) {
+$primary-color: #C5E0DC;
+$secondary-color: #F1D4AF;
+$text-color: #626266;
+$mobile-bg-color: #EDE3CC;
+$desktop-bg-color: #f5fffa;
+$footer-bg-color: #C8DED5;
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+@mixin center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin font-styles {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+      background-color:$primary-color;
+      @include font-styles; 
+      padding: 0px;
+      margin: 0px;
+      display:flexbox;
+      border-bottom: 1px solid gray;
+  
+  
+  nav {
+    ul{
+      list-style-type: none;
+      display: flex;
+  
+      li{
+      margin: 10px;  
+  
+        a{
+      color:black ; 
+      text-decoration: none; 
+      font-size: 0.5rem;
+      @include font-styles;
+          &:hover {
+        color: gray;
+          }
+        }
+      }
+    }
+  }
+  .dropdown-menu{
+      background-color:#CFAEC1;
+    }
+}
+  
+  /*Estilos y propiedades del body*/
+  
+  body{
+      background-color:$mobile-bg-color;
+  }
+  
+  .container{
+      padding: 0.5px;
+      @include center-content;
+  
+    img{
+      width: 150px;
+      height: 150px;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+    h1{
+      @include font-styles; 
+      text-align: center;
+      font-weight: bold;
+      font-size: 0.8rem;
+      color:white;
+    }
+  }
+  #Quien-soy{
+  display: none;
+  }
+  
+  #Sesiones h3{
+      display:grid;
+  }
+  .titulo-divisor{
+      display: none;
+  
+    h3{
+      display: none;
+  }
+}
+
+  .container-talleres{
+      padding: 30px;
+      @include center-content;
+  h2{
+      @include font-styles;
+      color: black; 
+      font-size: 1.5rem; 
+      text-align: left; 
+      margin: 10px;
+      text-decoration: underline;
+    }
+  
+  img{
+      width: 50%;
+      height: 50%;
+      border-radius: 20px;
+      border-style:groove;
+      }
+    }
+  
+  .col{
+      padding: 5px;
+      text-align: justify;
+    h3{
+      text-align: center;
+      font-size: 0.9rem;
+      p{
+      font-size: 0.5rem;
+      margin: 2px;
+      }
+    }
+  }
+  .imagen-actividades{
+      border-radius: 20px;
+      margin:10px 2px 0px 2px;
+      width: 95%;
+  }
+  
+  #sesiones{
+      padding: 10px;
+  }
+  
+  #principal{
+      background-color:#f5fffa; 
+    
+   h1{
+      @include font-styles; 
+      color: white;
+      text-align: center;
+      position: absolute;
+      }
+  
+    img{
+      width: 80%;
+      border-radius: 10px;
+      align-content: center;
+      }
+    }
+  p {
+      color: black;
+      font-size: 0.8rem;
+      @include font-styles; 
+      text-align: justify;
+      margin: 10px;
+      line-height: 200%;
+  }
+  h2{
+      @include font-styles;  
+      color: black; 
+      font-size: 18px; 
+      color: dimgray; 
+      text-align: center; 
+      font-weight: 400;
+  }
+  
+  .preguntas{ 
+      margin: 10px;
+      @include font-styles;
+      color: $text-color;  
+      font-size: 1rem; 
+      text-align: left;
+      font-weight: 600;
+  }
+  
+  .frase{
+      padding: 20px;
+      @include font-styles;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.5rem;
+      color:white;
+      background-color: $text-color;
+  }
+  label{
+      @include font-styles; 
+      color: black; 
+      font-size: 16px; 
+      color: dimgray;
+  }
+  
+  .comentarios{
+      @include font-styles; 
+      color: black; 
+      font-size: 16px; 
+      color: dimgray;
+  }
+  
+  /*----Estilos y propiedades del Footer----*/
+  
+  footer{ 
+      margin-top: 10px;
+      background-color:$footer-bg-color ;
+      font-size: 0.5rem;
+      @include font-styles;
+  }
+  
+  #section-container{
+      color: $footer-bg-color;
+      background-color: $footer-bg-color;
+      display: flex;
+      justify-content: space-evenly;
+  }
+  .redes{
+      @include center-content;
+      width: 20px;
+      height: 50px;
+
+    img{
+      width: 20px;
+      }
+   }
+}
+

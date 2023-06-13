@@ -25,6 +25,7 @@ $footer-bg-color: #C8DED5;
 }
 
 /* Estilos y propiedades del Header */
+@media only screen and (min-width:1200px) {
 header {
   background-color: $primary-color;
   @include font-styles;
@@ -263,3 +264,5 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
   background-color: #FC9D9A;
 }
+}
+@import url(./vistas/_mobile.scss);
