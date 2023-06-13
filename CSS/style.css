@@ -182,7 +182,16 @@ footer #section-container a {
   text-decoration: none; /* Elimina el subrayado del enlace */
   color: #246272;
 }
-footer div {
+
+.redes {
+  width: 40px;
+  transition: all 2s;
+}
+
+.redes:hover {
+  transform: rotate(45deg);
+}
+.redes:hover div {
   height: 100px;
   align-items: center;
   display: flex;

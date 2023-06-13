@@ -208,11 +208,20 @@ h2 {
     #section-container{
       display: flex;
       justify-content: space-evenly;
+
       a {
         text-decoration: none; /* Elimina el subrayado del enlace */
         color:#246272;
       }
+      }
   }
+  .redes{
+    width: 40px;
+    transition: all 2s;
+  }
+  .redes:hover{
+    transform: rotate(45deg);
+
   div{
     height: 100px;
     align-items: center;
