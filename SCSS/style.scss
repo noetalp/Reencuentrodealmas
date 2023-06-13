@@ -20,8 +20,8 @@ $footer-bg-color: #C8DED5;
 }
 
 * {
-  margin: 0;
-  padding: 0;
+  margin: 2px;
+  padding: 2px;
 }
 
 /* Estilos y propiedades del Header */
@@ -91,6 +91,24 @@ body {
     font-size: 1.5rem;
     color: $text-color;
   }
+}
+.preguntas {
+  padding: 2px;
+  margin: 10px 0;
+  @include font-styles;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: left;
+  color: $text-color;
+}
+.frase{
+  padding: 2px;
+  margin: 10px 0;
+  @include font-styles;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  color: #246272;
 }
 
 .container-talleres {
@@ -181,30 +199,58 @@ h2 {
     }
   }
   
-  .footer {
+  footer {
     background-color: $footer-bg-color;
     padding: 20px;
     @include font-styles;
+
   
-    p {
-      color: $text-color;
-      text-align: center;
-      margin-bottom: 10px;
-    }
-  
-    ul {
+    #section-container{
       display: flex;
-      justify-content: center;
-      list-style-type: none;
+      justify-content: space-evenly;
+      a {
+        text-decoration: none; /* Elimina el subrayado del enlace */
+        color:#246272;
+      }
+  }
+  div{
+    height: 100px;
+    align-items: center;
+    display: flex;
+}
+      }
+// formulario de la pagina "contacto"
+form {
+  display: flex;
+  flex-direction:column;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
   
-      li {
-        margin: 0 10px;
-  
-        a {
-          color: $text-color;
-          text-decoration: none;
-        }
+  label {
+    margin-bottom: 5px;
+  }
+  input{
+    select{
+      textarea{
+        margin-bottom: 10px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+
       }
     }
   }
-  
+}
+form input[type="submit"] {
+  background-color: #F9CDAD;
+  color: white;
+  cursor: pointer;
+}
+form input[type="submit"]:hover {
+  background-color: #FC9D9A;
+}
